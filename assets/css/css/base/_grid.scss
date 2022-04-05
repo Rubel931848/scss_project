@@ -1,0 +1,36 @@
+.container,.container-fluid{
+    width: 100%;
+    padding:0 30px;
+    margin:0 auto;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin:0px -15px;
+    }
+}
+
+$grid-column:12;
+$grid-xxl-breackpoint:1400px;
+$grid-xl-breackpoint:1200px;
+
+@media(min-width:$grid-xxl-breackpoint){
+    .container{
+        width:1320px;
+    }
+    @for $i from 1 through $grid-column {
+       .col-xxl-#{$i}{
+           width:(100/12 * $i)*1%;
+       } 
+    }
+}
+
+@media(min-width:$grid-xl-breackpoint){
+    .container{
+        width:1120px
+    }
+    @for $i from 1 through $grid-column {
+        .col-xl-#{$i}{
+            width:(100/12*$i)*1%
+        }
+    }
+}

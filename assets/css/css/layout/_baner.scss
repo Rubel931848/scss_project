@@ -1,0 +1,17 @@
+.banner{
+    height: 100vh;
+    .banner-content{
+        h2{
+            color:$white;
+            font-size:50px;
+            text-transform: capitalize;
+        }
+        h4{
+            color:$white;
+            text-transform: capitalize;
+            padding:20px 0px;
+            line-height: 30px;
+            font-size: 20px;
+        }
+    }
+}
